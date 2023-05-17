@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class FormaBidimensional {
+public abstract class FormaBidimensional extends FormaGeometrica {
 }

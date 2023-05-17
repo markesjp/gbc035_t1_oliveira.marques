@@ -1,5 +1,5 @@
 public class EstudanteGraduacao extends Estudante {
-    private String tituloTCC;
+    private final String tituloTCC;
 
     public EstudanteGraduacao(String nome, String endereco, String tituloTCC) {
         super(nome, endereco);
@@ -13,11 +13,10 @@ public class EstudanteGraduacao extends Estudante {
                 '}');
     }
 
-    public String getTituloTCC() {
-        return tituloTCC;
-    }
-
-    public void setTituloTCC(String tituloTCC) {
-        this.tituloTCC = tituloTCC;
+    public void print(boolean quebraLinha) {
+        super.print();
+        System.out.println("EstudanteGraduacao{" +
+                "tituloTCC='" + tituloTCC + '\'' +
+                '}');
     }
 }

@@ -16,6 +16,20 @@ public class EstudantePosGrad extends Estudante {
                 ", linhadDePesquisa='" + linhaDePesquisa + '\'' +
                 '}');
     }
+    public void print(boolean quebraLinha) {
+        if(quebraLinha){
+            super.print(true);
+            System.out.println("EstudantePosGrad:" +
+                    "\nformacao='" + formacao + '\'' +
+                    "\nlinhadDePesquisa='" + linhaDePesquisa );
+
+        }else
+            super.print(false);
+        System.out.println("EstudantePosGrad{" +
+                "formacao='" + formacao + '\'' +
+                "; linhadDePesquisa='" + linhaDePesquisa + '\'' +
+                '}');
+    }
 
     public String getFormacao() {
         return formacao;

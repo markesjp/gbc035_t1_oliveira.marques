@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class FormaTridimensional {
+public abstract class FormaTridimensional extends FormaGeometrica {
+    public abstract double obterVolume();
 }

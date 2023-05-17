@@ -1,0 +1,7 @@
+# Ex02
+ 
+- Qual a diferença entre o throw e throws ? Justifique explicado o que cada comando faz
+A diferença entre "throws" e "throw" é que "throws" é uma declaração que indica que um método pode lançar uma exceção específica e delega a responsabilidade de lidar com a exceção ao método chamador ou ao manipulador de exceções, enquanto "throw" é uma instrução que faz o lançamento de uma exceção específica em um ponto específico do código. Em resumo, "throws" declara uma possível exceção que um método pode lançar, enquanto "throw" é usado para realmente lançar uma exceção em um ponto específico do código.
+
+- Indique a diferença entre checked e uncheked exceptions
+ As exceções checked são verificadas pelo compilador em tempo de compilação e exigem que o código que chama um método que pode lançar essa exceção manipule-a. Exemplos incluem IOException e SQLException. Já as exceções unchecked não são verificadas pelo compilador em tempo de compilação e geralmente ocorrem devido a erros de lógica do programador ou problemas imprevisíveis, como falta de memória. Exemplos incluem NullPointerException e ArrayIndexOutOfBoundsException. O código que chama um método que pode lançar uma exceção unchecked não é exigido pelo compilador a manipulá-la, mas ainda é possível fazê-lo.

@@ -27,5 +27,8 @@ Copie o exemplo Estudante disponível na pasta 'samples/polimorfismo'. Crie uma 
 
 (d) Faça, para as classes de estudante de graduação, estudante de mestrado e estudante de doutorado, uma *sobrecarga* do método print(), fazendo receber como parâmetro um valor booleano que indica se o print será na mesma linha ou em várias linhas. No caso da mesma linha, são mostrados todos os atributos da classe separados por ponto e vírgula. No caso de várias linhas, cada atributo é exibido em uma linha diferente.
 
-(e)  Referente ao exercício anterior, é possível utilizar o recém criado método print(boolean) em um polimorfismo tendo como base um vetor da classe Estudante? Justifique. Caso não seja possível, altere somente o código da classe Estudante para que passe a ser possível. O que ocorre neste caso com a classe Estudante de Pós-gradução?
+(e)  Referente ao exercício anterior, é possível utilizar o recém criado método print(boolean) em um polimorfismo tendo como base um vetor da classe Estudante? Justifique. Caso não seja possível, altere somente o código da classe Estudante para que passe a ser possível. O que ocorre neste caso com a classe Estudante de Pós-gradução? 
+
+Resposta:
+Não, pois a classe estudante tem abaixo da sua hierarquia as classes, EstudanteDoutorado, EstudanteGraduacao, EstudanteMestrado, EstudantePosGrad, ou seja, para que seja possível utilizar polimorfismo entre elas é necessário que a função em questão possua a mesma assinatura, no entanto a classe EstudantePosGrad não possui a função print(boolean var), apenas print() e ambas têm assinaturas diferentes entre si pela divergência de argumentos.
 
